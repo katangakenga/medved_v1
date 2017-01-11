@@ -1,0 +1,80 @@
+.h1 {
+    font-family: Arial;
+    font-size: 25px;
+    font-weight: bold;
+    display: inline-block;
+    margin-bottom: 30px;
+}
+
+.h2 {
+    font-family: Arial;
+    font-size: 16px;
+    font-weight: bold;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.errmessages {
+    display: inline-block;
+    width: 100%;
+    min-height: 30px;
+    background: #dddddd;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.errmessages li {
+    color: #FF0000;
+    font-family :Arial;
+    font-size: 12px;
+    list-style-type: none;
+    padding-bottom: 5px;
+}
+
+.form {
+    width: 700px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.formLabel, .formInput {
+    /* in order to define widths */
+    display: inline-block;
+    margin-bottom: 7px;
+    margin-top: 7px;
+}
+
+.formLabel {
+    width: 20%;
+    /* positions the label text beside the input */
+    text-align: left;
+    font-family: Arial;
+    font-size: 12px;
+}
+
+.formInput {
+    font-family: Arial;
+    font-size: 12px;
+}
+
+.formLabel + .formInput {
+    width: 20%;
+    /* large margin-right to force the next element to the new-line
+       and margin-left to create a gutter between the label and input */
+    margin: 0 20% 0 4%;
+}
+
+/* only the submit button is matched by this selector,
+   but to be sure you could use an id or class for that button */
+.formInput + .formInput {
+    float: right;
+}
+
+.formButton {
+    display: block;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-family: Arial;
+    font-size: 12px;
+    width: 313px;
+}
